@@ -1,0 +1,73 @@
+ 
+#mList {
+  max-width: auto;
+  margin: auto;
+}
+ @media screen and (orientation: landscape) and (min-width: 801px) {
+
+#mList {
+  max-width: 100%;
+}
+}
+
+/* EOF demo */
+
+
+#mList A {
+  margin: 1px;
+  width: 373px;
+  height: 185px;
+  line-height: 15px; /* match height */
+  color: #FFF;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #000;
+  display: inline-table;
+}
+
+/* media list title overlay */
+
+
+#mList A DIV {
+  visibility: visible;
+  background: #ee7f01;
+  height:18%;
+ 
+  }
+
+/* On hover actions */
+
+
+#mList A:hover DIV {
+	/* visibility: hidden;  */
+	}
+
+#mList A:hover { border: 1px solid #F00; }
+
+/* === popup media player === */
+
+/* background overlay */
+
+#mPlayer {
+  display: none;
+  background: rgba(0, 0, 0, .8); 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  left: 0;
+  top: 0;
+}
+
+/* video player */
+
+#mPlayer DIV {
+  position: fixed;
+  background: #000;
+  width: 760px; /* width of YouTube Player */
+  height: 515px; /* height of YouTube Player */
+      left: calc(22vw - 102px);
+    top: calc(18vh - 92px);
+  /* 157 is .5(315), centers y axis*/
+}
